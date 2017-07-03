@@ -11,6 +11,8 @@ rails new starter-api --api
 rails generate devise:install
 rails generate devise user
 rails db:migrate # uncomment appropriate options in user.rb before running this
+rails g migration AddAuthenticationTokenToUser authentication_token:string
+rails db:migrate
 ```
 
 ## Resources and useful links
