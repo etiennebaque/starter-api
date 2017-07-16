@@ -15,6 +15,14 @@ rails g migration AddAuthenticationTokenToUser authentication_token:string
 rails db:migrate
 ```
 
+## Run in development with Ember frontend
+```
+rails server --binding 0.0.0.0
+```
+
 ## Resources and useful links
 
 * [Devise](https://github.com/plataformatec/devise)
+* [Ember and Rails 5 tutorial](https://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/)
+* [Ember-simple-auth and Devise
+  tutorial](https://romulomachado.github.io/2015/09/28/using-ember-simple-auth-with-devise.html)
