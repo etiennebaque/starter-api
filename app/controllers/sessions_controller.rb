@@ -5,10 +5,10 @@ class SessionsController < ApplicationController
     super do |user|
       if request.format.json?
         data = {
-            token: user.authentication_token,
-            email: user.email
+          token: user.authentication_token,
+          email: user.email
         }
-        render json: data, status: 201 and return
+        render json: data, status: 201 && return
       end
     end
   end
