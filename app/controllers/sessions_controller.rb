@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class SessionsController < Devise::SessionsController
   respond_to :html, :json
 
   def create
@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
           token: user.authentication_token,
           email: user.email
         }
-        render json: data, status: 201 && return
+        render json: data, status: 201 and return
       end
     end
   end
